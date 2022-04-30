@@ -1369,8 +1369,9 @@ header {
                     <div class="right-contact">
                         <form method="POST" 
   action="https://script.google.com/macros/s/AKfycbzaIGikf-_1eKLiekv1jPkgmZ3SAFvQG7Paf9nb1PzrLfQFusCXj-wACcVLHAWNQWapSg/exec" class="contact-form">
+<!-- 				 <input name="Name" type="text" placeholder="Name" required> -->
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
+                                <input name="Name" type="text" required placeholder="YOUR NAME">
                                 <select class="box" name="dept-1" id="dept-1">
 					<option hidden="">Choose Your Department</option>
                                     <option value="english">English</option>
@@ -1391,8 +1392,8 @@ header {
                                 </select>
                             </div>
                             <div class="input-control i-c-2">
-                                <input type="email" required placeholder="YOUR EMAIL">
-                                <input type="text" required placeholder="Mobile No"></input>
+                                <input name="email" type="email" required placeholder="YOUR EMAIL">
+                                <input name="mobile no" type="text" required placeholder="Mobile No"></input>
                             </div>
 
 
@@ -1465,14 +1466,12 @@ header {
                             </div>
                             <div class="submit-btn">
                                 <a href="#" class="main-btn">
-                                    <span class="btn-text">Submit</span>
+                                    <span class="btn-text"> <button type="submit">Send</button></span>
 
                                 </a>
                             </div>
 			    
 <!--   <input name="Email" type="email" placeholder="Email" required> -->
-  <input name="Name" type="text" placeholder="Name" required>
-  <button type="submit">Send</button>
                         </form>
                     </div>
                 </div>
