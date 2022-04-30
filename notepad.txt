@@ -1,0 +1,6 @@
+ <section class="section sec3" id="portfolio">
+ </section>
+
+  <div class="control control-3" data-id="portfolio">
+            <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+        </div>
