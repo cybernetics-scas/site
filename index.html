@@ -712,7 +712,24 @@ div.right-header {
         <i class="fa fa-moon-o" aria-hidden="true"></i>
         <!-- <i class="fa-solid fa-moon"></i> -->
     </div>
-   
+   <script src="confetti.js"></script>
+    <script>
+        
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 10000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+
+        start();
+        stop();
+    </script>
     <script src="app.js"></script>
 </body>
 
