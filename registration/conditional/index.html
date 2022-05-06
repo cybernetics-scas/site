@@ -3,7 +3,7 @@
 	<head>
 		<!--JavaScript and CSS -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Registration || Tech-Maniac 2k22</title>
+		<title>Registration | TECH-MANIAC 2k22</title>
 		<script src="jquery.min.js"></script>
 		<script src="conditional.js"></script>		
 		<link rel="stylesheet" href="bootstrap-iso.css" /> <!-- https://formden.com/blog/isolate-bootstrap -->	
@@ -16,7 +16,8 @@
 		<div class="container-fluid">
 			<div class="column">
 				<div class="col-sm-6">
-					<form method="post" action="https://script.google.com/macros/s/AKfycbx-qR-Mtg-9tOkK4Y6A_rVTc20Zv3SSib3xJdUudZnEhIEqbmNLiYYoW9OWtZUdnli2/exec" id="live_form">
+					<div class="container">
+					<form method="post" action="https://script.google.com/macros/s/AKfycbx-qR-Mtg-9tOkK4Y6A_rVTc20Zv3SSib3xJdUudZnEhIEqbmNLiYYoW9OWtZUdnli2/exec" action="<my-app-script-endpoint>" id="live_form">
 					 <div class="form-group">
 						<div class="sm-form-title">
 							<h2 class="sm-form-title__header">Event Registration</h2>
@@ -234,14 +235,39 @@
 					  </label>
 					 </div>				 
 					 <div class="form-group">
-					   <button class="btn btn-primary " name="submit" type="submit">
+					   <button class="btn btn-primary " name="submit" type="submit"> <a href="https://cybernetics.codes"> </a>
 						Submit
 					   </button>
+					   <script> 
+						window.addEventListener("load", function() {
+						  const form = document.getElementById('live_form');
+						  form.addEventListener("submit", function(e) {
+							e.preventDefault();
+							const data = new FormData(form);
+							const action = e.target.action;
+							fetch(action, {
+							  method: 'POST',
+							  body: data,
+							})
+							.then(() => {
+							  alert("Registration is Successful!! \n Click 'Pay now' to make your payment");
+							})
+						  });
+						});
+						</script>
 					 </div>
+					 <button onclick="myFunction()">Pay Now!!</button>
+
+<script>
+function myFunction() {
+  location.replace("https://payments.cashfree.com/forms/Cybernetics")
+}
+</script>
 					</form>								
 				</div>										
 			</div>
 		</div>
+	</div>
 	</div> 
 	</body>
 </html>
